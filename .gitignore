@@ -1,0 +1,23 @@
+# Local .terraform directories
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Terraform state files (NEVER COMMIT THESE)
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Compiled binaries and temporary files
+**/dist/
+**/build/
+**/node_modules/
+**/__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+
+# Credentials (Just in case you created them locally)
+.aws/
