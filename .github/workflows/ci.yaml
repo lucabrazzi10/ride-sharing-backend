@@ -25,9 +25,9 @@ jobs:
         with:
           directory: ./terraform
           framework: terraform
-          soft_fail: true # Set to false if you want the build to fail on security issues
+          soft_fail: true
 
-deploy-infrastructure:
+  deploy-infrastructure:
     name: Deploy Infrastructure
     needs: [infrastructure-lint, security-scan]
     if: github.ref == 'refs/heads/main'
